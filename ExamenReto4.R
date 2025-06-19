@@ -19,3 +19,6 @@ desv2 <- sd(datos$Seasons,na.rm = T)
 length(unique(datos$type))
 length(unique(datos$country))
 length(unique(datos$director))
+
+miss_var_summary(datos)
+vis_miss(datos)
