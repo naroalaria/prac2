@@ -9,3 +9,13 @@ library(readxl)
 library(smoothmest)
 library(VIM)
 library(plumber)
+
+datos<-read.csv("C:\\Users\\naroa\\Downloads\\netflix.csv")
+summary(datos)
+
+desv <- sd(datos$Minutes,na.rm = T)
+desv2 <- sd(datos$Seasons,na.rm = T)
+
+length(unique(datos$type))
+length(unique(datos$country))
+length(unique(datos$director))
